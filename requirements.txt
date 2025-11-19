@@ -3,4 +3,3 @@ numpy
 seaborn
 flask
 gunicorn
--e .
