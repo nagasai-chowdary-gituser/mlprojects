@@ -16,7 +16,6 @@ from xgboost import XGBRegressor
 
 from src.exception import CustomException
 from src.logger import logging
-
 from src.utils import save_object,evaluate_models
 
 @dataclass
@@ -78,7 +77,7 @@ class ModelTrainer:
                 },
                 "AdaBoost Regressor":{
                     'learning_rate':[.1,.01,0.5,.001],
-                    # 'loss':['linear','square','exponential'],
+                    'loss':['linear','square','exponential'],
                     'n_estimators': [8,16,32,64,128,256]
                 }
                 
@@ -110,10 +109,6 @@ class ModelTrainer:
 
             r2_square = r2_score(y_test, predicted)
             return r2_square
-            
-
-
-
-            
+                    
         except Exception as e:
             raise CustomException(e,sys)

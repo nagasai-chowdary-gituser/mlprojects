@@ -1,0 +1,15 @@
+{
+ "argv": [
+  "C:\\Users\\asus\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\python.exe",
+  "-Xfrozen_modules=off",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python (myenv)",
+ "language": "python",
+ "metadata": {
+  "debugger": true
+ }
+}
