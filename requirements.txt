@@ -4,3 +4,4 @@ seaborn
 flask
 gunicorn
 scikit-learn
+dill
